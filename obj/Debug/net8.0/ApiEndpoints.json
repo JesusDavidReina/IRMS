@@ -1,0 +1,1144 @@
+[
+  {
+    "ContainingType": "IRMS.Controllers.AccionController",
+    "Method": "GetAllAcciones",
+    "RelativePath": "api/Accion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[IRMS.Model.Accion, IRMS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.AccionController",
+    "Method": "CreateAccion",
+    "RelativePath": "api/Accion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NombreAccion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Descripcion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DispositivoId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Accion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.AccionController",
+    "Method": "GetAccion",
+    "RelativePath": "api/Accion/{AccionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AccionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Accion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.AccionController",
+    "Method": "UpdateAccion",
+    "RelativePath": "api/Accion/{AccionId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AccionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "accion",
+        "Type": "IRMS.Model.Accion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Accion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.AccionController",
+    "Method": "DeleteAccion",
+    "RelativePath": "api/Accion/{AccionId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AccionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Clima",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.ClimaController",
+    "Method": "GetAllClimas",
+    "RelativePath": "api/Clima",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[IRMS.Model.Clima, IRMS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.ClimaController",
+    "Method": "CreateClima",
+    "RelativePath": "api/Clima",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NombreClima",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EfectoClima",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Clima",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.ClimaController",
+    "Method": "GetClima",
+    "RelativePath": "api/Clima/{ClimaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ClimaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Clima",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.ClimaController",
+    "Method": "UpdateClima",
+    "RelativePath": "api/Clima/{ClimaId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ClimaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "clima",
+        "Type": "IRMS.Model.Clima",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Clima",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.ClimaController",
+    "Method": "DeleteClima",
+    "RelativePath": "api/Clima/{ClimaId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ClimaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Clima",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.CultivoController",
+    "Method": "GetAllClimas",
+    "RelativePath": "api/Cultivo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[IRMS.Model.Cultivo, IRMS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.CultivoController",
+    "Method": "CreateCultivo",
+    "RelativePath": "api/Cultivo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CultivoNombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Estado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NivelAgua",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DispositivoId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Cultivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.CultivoController",
+    "Method": "GetCulivo",
+    "RelativePath": "api/Cultivo/{CultivoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CultivoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Cultivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.CultivoController",
+    "Method": "UpdateCultivo",
+    "RelativePath": "api/Cultivo/{CultivoId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CultivoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "cultivo",
+        "Type": "IRMS.Model.Cultivo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Cultivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.CultivoController",
+    "Method": "DeleteCultivo",
+    "RelativePath": "api/Cultivo/{CultivoId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CultivoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Cultivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.DispositivoController",
+    "Method": "GetAllDispositivos",
+    "RelativePath": "api/Dispositivo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[IRMS.Model.Dispositivo, IRMS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.DispositivoController",
+    "Method": "CreateDispositivo",
+    "RelativePath": "api/Dispositivo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NombreDispositivo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Descripcion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TipoDispositivoId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Dispositivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.DispositivoController",
+    "Method": "GetDispositivo",
+    "RelativePath": "api/Dispositivo/{DispositivoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DispositivoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Dispositivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.DispositivoController",
+    "Method": "UpdateDispositivo",
+    "RelativePath": "api/Dispositivo/{DispositivoId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DispositivoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dispositivo",
+        "Type": "IRMS.Model.Dispositivo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Dispositivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.DispositivoController",
+    "Method": "DeleteDispositivo",
+    "RelativePath": "api/Dispositivo/{DispositivoId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DispositivoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Dispositivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.GranjaController",
+    "Method": "GetAllNivel",
+    "RelativePath": "api/Granja",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[IRMS.Model.Granja, IRMS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.GranjaController",
+    "Method": "CreateGrnaja",
+    "RelativePath": "api/Granja",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NombreGranja",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CultivoId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ClimaId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SistemaRiego",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Dificultad",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Granja",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.GranjaController",
+    "Method": "GetNivel",
+    "RelativePath": "api/Granja/{GranjaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "GranjaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Granja",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.GranjaController",
+    "Method": "UpdateGranja",
+    "RelativePath": "api/Granja/{GranjaId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "GranjaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "granja",
+        "Type": "IRMS.Model.Granja",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Granja",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.GranjaController",
+    "Method": "DeleteGranja",
+    "RelativePath": "api/Granja/{GranjaId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "GranjaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Granja",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.JugadorController",
+    "Method": "GetAllJugador",
+    "RelativePath": "api/Jugador",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[IRMS.Model.Jugador, IRMS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.JugadorController",
+    "Method": "CreateJugado",
+    "RelativePath": "api/Jugador",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Nombres",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Apellidos",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NombreUsuario",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "photo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Jugador",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.JugadorController",
+    "Method": "GetJugador",
+    "RelativePath": "api/Jugador/{JugadorId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "JugadorId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Jugador",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.JugadorController",
+    "Method": "UpdateJugador",
+    "RelativePath": "api/Jugador/{JugadorId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "JugadorId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "jugador",
+        "Type": "IRMS.Model.Jugador",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Jugador",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.JugadorController",
+    "Method": "DeleteJugador",
+    "RelativePath": "api/Jugador/{JugadorId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "JugadorId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Jugador",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.PartidaController",
+    "Method": "GetAllPartida",
+    "RelativePath": "api/Partida",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[IRMS.Model.Partida, IRMS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.PartidaController",
+    "Method": "CreatePartida",
+    "RelativePath": "api/Partida",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "GranjaId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Puntuacion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaGuardado",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaCreacion",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "PartidaEstado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "JugadorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Partida",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.PartidaController",
+    "Method": "GetPartida",
+    "RelativePath": "api/Partida/{PartidaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PartidaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Partida",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.PartidaController",
+    "Method": "UpdateCultivo",
+    "RelativePath": "api/Partida/{PartidaId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PartidaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "partida",
+        "Type": "IRMS.Model.Partida",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Cultivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.PartidaController",
+    "Method": "DeletePartida",
+    "RelativePath": "api/Partida/{PartidaId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PartidaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Partida",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.TipoDispositivoController",
+    "Method": "GetAllTipoDispos",
+    "RelativePath": "api/TipoDispositivo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[IRMS.Model.TipoDispositivo, IRMS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.TipoDispositivoController",
+    "Method": "CreateTipoDispositivo",
+    "RelativePath": "api/TipoDispositivo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NombreTipoDispositivo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.TipoDispositivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.TipoDispositivoController",
+    "Method": "GetTipoDispositivo",
+    "RelativePath": "api/TipoDispositivo/{TipoDispositivoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TipoDispositivoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.TipoDispositivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.TipoDispositivoController",
+    "Method": "UpdateTipoDispositivo",
+    "RelativePath": "api/TipoDispositivo/{TipoDispositivoId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TipoDispositivoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "tipoDispositivo",
+        "Type": "IRMS.Model.TipoDispositivo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.TipoDispositivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.TipoDispositivoController",
+    "Method": "DeleteTipoDispositivo",
+    "RelativePath": "api/TipoDispositivo/{TipoDispositivoId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TipoDispositivoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.TipoDispositivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

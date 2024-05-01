@@ -1,0 +1,6 @@
+@IRMS_HostAddress = http://localhost:5234
+
+GET {{IRMS_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
