@@ -6,10 +6,11 @@ namespace IRMS.Servicios
     public interface IJugadorServicio
     {
         Task<List<Jugador>> GetJugadorList();
-        Task<Jugador> GetJugador(int JugadorId);
+        Task<Jugador> GetJugador(string NombreUsuario, string password);
         Task<Jugador> CreateJugador(string Nombres, string Apellidos, string NombreUsuario, string password, string photo, string Email);
         Task<Jugador> DeleteJugador(int JugadorId);
-        Task<Jugador> UpdateJugador(int JugadorId , string? Nombres = null, string? Apellidos = null, string? NombreUsuario = null, string? password = null, string? photo = null, string? Email = null);
+        Task<Jugador> UpdateJugador(int jugadorID, string? Nombres = null, string? Apellidos = null, string? NombreUsuario = null, string? password = null, string? photo = null, string? Email = null);
+        Task<Jugador> GetJugadorById(int Jugadorid);
     }
     public class JugadorServicio : IJugadorServicio
     {
@@ -28,9 +29,14 @@ namespace IRMS.Servicios
             return await _jugadorRepositorio.DeleteJugador(JugadorId);
         }
 
-        public async Task<Jugador> GetJugador(int JugadorId)
+        public async Task<Jugador> GetJugador(string NombreUsuario, string password)
         {
-            return await _jugadorRepositorio.GetJugador(JugadorId);
+            return await _jugadorRepositorio.GetJugador(NombreUsuario, password);
+        }
+
+        public async Task<Jugador> GetJugadorById(int Jugadorid)
+        {
+            return await _jugadorRepositorio.GetJugadorById(Jugadorid);
         }
 
         public async Task<List<Jugador>> GetJugadorList()
@@ -38,9 +44,9 @@ namespace IRMS.Servicios
             return await _jugadorRepositorio.GetJugadorList();
         }
 
-        public async Task<Jugador> UpdateJugador(int JugadorId, string? Nombres = null, string? Apellidos = null, string? NombreUsuario = null, string? password = null, string? photo = null, string? Email = null)
+        public async Task<Jugador> UpdateJugador(int jugadorID, string? Nombres = null, string? Apellidos = null, string? NombreUsuario = null, string? password = null, string? photo = null, string? Email = null)
         {
-            Jugador newJugador = await _jugadorRepositorio.GetJugador(JugadorId);
+            Jugador newJugador = await _jugadorRepositorio.GetJugadorById(jugadorID);
 
             if (newJugador != null) 
             {

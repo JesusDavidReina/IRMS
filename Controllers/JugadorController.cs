@@ -22,10 +22,18 @@ namespace IRMS.Controllers
             return Ok(await _jugadorServicio.GetJugadorList());
         }
 
-        [HttpGet("{JugadorId}")]
-        public async Task<ActionResult<Jugador>> GetJugador(int JugadorId)
+        [HttpGet("{NombreUsuario}/{password}")]
+        public async Task<ActionResult<Jugador>> GetJugador(string NombreUsuario, string password)
         {
-            var jugador = _jugadorServicio.GetJugador(JugadorId);
+            var jugador = _jugadorServicio.GetJugador(NombreUsuario, password);
+            if (jugador == null) { return BadRequest("Jugador no encontrado"); }
+
+            return Ok(await jugador);
+        }
+        [HttpGet("{JugadorId}")]
+        public async Task<ActionResult<Jugador>> GetJugadorById(int JugadorId)
+        {
+            var jugador = _jugadorServicio.GetJugadorById(JugadorId);
             if (jugador == null) { return BadRequest("Jugador no encontrado"); }
 
             return Ok(await jugador);
@@ -35,10 +43,10 @@ namespace IRMS.Controllers
         {
             return Ok(await _jugadorServicio.CreateJugador(Nombres, Apellidos, NombreUsuario, password, photo, Email));
         }
-        [HttpPut("{JugadorId}")]
-        public async Task<ActionResult<Jugador>> UpdateJugador(int JugadorId, [FromBody] Jugador jugador)
+        [HttpPut("{jugardorID}")]
+        public async Task<ActionResult<Jugador>> UpdateJugador(int jugardorID, [FromBody] Jugador jugador)
         {
-            return Ok(await _jugadorServicio.UpdateJugador(JugadorId, jugador.Nombres, jugador.Apellidos, jugador.NombreUsuario, jugador.password, jugador.photo, jugador.Email));
+            return Ok(await _jugadorServicio.UpdateJugador(jugardorID, jugador.Nombres, jugador.Apellidos, jugador.NombreUsuario, jugador.password, jugador.photo, jugador.Email));
         }
         [HttpDelete("{JugadorId}")]
         public async Task<ActionResult<Jugador>> DeleteJugador(int JugadorId)

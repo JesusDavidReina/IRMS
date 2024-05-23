@@ -777,7 +777,7 @@
   },
   {
     "ContainingType": "IRMS.Controllers.JugadorController",
-    "Method": "GetJugador",
+    "Method": "GetJugadorById",
     "RelativePath": "api/Jugador/{JugadorId}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -786,37 +786,6 @@
       {
         "Name": "JugadorId",
         "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "IRMS.Model.Jugador",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "IRMS.Controllers.JugadorController",
-    "Method": "UpdateJugador",
-    "RelativePath": "api/Jugador/{JugadorId}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "JugadorId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "jugador",
-        "Type": "IRMS.Model.Jugador",
         "IsRequired": true
       }
     ],
@@ -843,6 +812,68 @@
       {
         "Name": "JugadorId",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Jugador",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.JugadorController",
+    "Method": "UpdateJugador",
+    "RelativePath": "api/Jugador/{jugardorID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jugardorID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "jugador",
+        "Type": "IRMS.Model.Jugador",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IRMS.Model.Jugador",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IRMS.Controllers.JugadorController",
+    "Method": "GetJugador",
+    "RelativePath": "api/Jugador/{NombreUsuario}/{password}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NombreUsuario",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

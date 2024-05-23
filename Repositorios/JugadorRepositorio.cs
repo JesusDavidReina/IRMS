@@ -7,10 +7,11 @@ namespace IRMS.Repositorios
     public interface IJugadorRepositorio
     {
         Task<List<Jugador>> GetJugadorList();
-        Task<Jugador> GetJugador(int JugadorId);
+        Task<Jugador> GetJugador(string NombreUsuario, string password);
         Task<Jugador> CreateJugador(string Nombres, string Apellidos, string NombreUsuario, string password, string photo , string Email);
         Task<Jugador> DeleteJugador(int JugadorId);
         Task<Jugador> UpdateJugador(Jugador jugador);
+        Task<Jugador> GetJugadorById(int Jugadorid);
     }
     public class JugadorRepositorio : IJugadorRepositorio
     {
@@ -46,10 +47,15 @@ namespace IRMS.Repositorios
             return deleteJugador;
         }
 
-        public async Task<Jugador> GetJugador(int JugadorId)
+        public async Task<Jugador> GetJugador(string NombreUsuario, string password)
         {
-            return await _db.Jugador.Where(U => U.JugadorId == JugadorId).FirstAsync();
+            return await _db.Jugador.Where(U => U.NombreUsuario == NombreUsuario && U.password == password).FirstAsync();
 
+        }
+
+        public async Task<Jugador> GetJugadorById(int Jugadorid)
+        {
+            return await _db.Jugador.Where(U => U.JugadorId == Jugadorid).FirstAsync();
         }
 
         public async Task<List<Jugador>> GetJugadorList()

@@ -14,6 +14,15 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("corsPolicy", policy =>
+    {
+        policy.AllowAnyOrigin();
+        policy.AllowAnyHeader();
+        policy.AllowAnyMethod();
+    });
+});
 
 #region repositorios
 builder.Services.AddScoped<IClimaRepositorio, ClimaRepositorio>();
@@ -38,6 +47,7 @@ builder.Services.AddScoped<IAccionServicio, AccioServicio>();
 #endregion
 
 var app = builder.Build();
+app.UseCors("corsPolicy");
 
 // Configure the HTTP request pipeline.
 app.UseSwagger();
